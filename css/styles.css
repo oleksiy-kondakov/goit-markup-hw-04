@@ -101,6 +101,7 @@ img {
 .contacts-list {
   display: flex;
   margin-left: auto;
+  justify-content: baseline;
 }
 .contacts-list-item:not(:last-child) {
   margin-right: 30px;
@@ -123,6 +124,10 @@ img {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+.contacts-list-item-link:hover .contacts-list-item-icon,
+.contacts-list-item-link:focus .contacts-list-item-icon {
+  fill: var(--hover-text-color);
 }
 .contacts-list-item-link:hover {
   color: var(--hover-text-color);
