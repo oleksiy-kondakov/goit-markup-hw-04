@@ -44,6 +44,7 @@ img {
 }
 .container {
   width: 1200px;
+  height: auto;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -83,14 +84,16 @@ img {
   margin-right: 40px;
 }
 .nav-list-item-link {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .nav-list-item-link:hover {
   color: var(--hover-text-color);
@@ -101,7 +104,6 @@ img {
 .contacts-list {
   display: flex;
   margin-left: auto;
-  justify-content: baseline;
 }
 .contacts-list-item:not(:last-child) {
   margin-right: 30px;
@@ -115,6 +117,10 @@ img {
 }
 
 .contacts-list-item-link {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-family: Roboto;
   font-weight: 500;
   font-style: normal;
@@ -122,8 +128,12 @@ img {
   font-size: 14px;
   color: #757575;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
+}
+.contacts-list-item-icon {
+  width: 16px;
+  height: 14px;
+  margin-right: 10px;
+  fill: #757575;
 }
 .contacts-list-item-link:hover .contacts-list-item-icon,
 .contacts-list-item-link:focus .contacts-list-item-icon {
@@ -136,6 +146,18 @@ img {
   color: var(--hover-text-color);
 }
 /* ГЕРОЙ */
+.hero {
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url("../images/herobg.jpg");
+  background-size: cover;
+}
+.hero .container {
+}
 .main-header {
   font-style: normal;
   font-weight: 900;
@@ -146,7 +168,7 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   text-shadow: 2px 2px 4px #000000;
-  /*добавил тень для читабельности*/
+  padding-top: 199px;
   margin-bottom: 30px;
 }
 
@@ -212,18 +234,18 @@ img {
   max-width: 270px;
 }
 .capabillity-img-wrapper {
+  display: flex;
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
   margin-bottom: 30px;
 }
-.capabillity-img {
-  padding-top: 25px;
-  padding-right: 100px;
-  padding-bottom: 25px;
-  padding-left: 100px;
+.capabillity-svg {
+  width: 70px;
+  height: 70px;
 }
 
 /* Чем мы занимаемся */
