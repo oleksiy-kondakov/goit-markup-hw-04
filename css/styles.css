@@ -69,7 +69,6 @@ img {
   letter-spacing: 0.03em;
   color: #000000;
   margin-right: 85px;
-  /*добавил тень для читабельности*/
 }
 .logo-blue {
   color: var(--hover-text-color);
@@ -167,7 +166,6 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  text-shadow: 2px 2px 4px #000000;
   padding-top: 199px;
   margin-bottom: 30px;
 }
@@ -449,6 +447,9 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+}
+.social-links-footer-item .social-media-link-item-svg {
+  fill: #ffffff;
 }
 .social-links-footer-item:hover {
   color: var(--hover-text-color);
