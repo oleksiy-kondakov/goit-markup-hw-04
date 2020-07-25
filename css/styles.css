@@ -448,6 +448,11 @@ img {
   color: #ffffff;
   margin-bottom: 20px;
 }
+
+.social-links-footer-list li {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
 .social-links-footer-item .social-media-link-item-svg {
   fill: #ffffff;
 }
