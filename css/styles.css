@@ -382,9 +382,13 @@ img {
 }
 .clients-list li:focus {
   background-color: var(--hover-text-color);
+  border-radius: 4px;
+  fill: #ffffff;
 }
 .clients-list li:hover {
   background-color: var(--hover-text-color);
+  border-radius: 4px;
+  fill: #ffffff;
 }
 /* ФУТЕР */
 .footer {
