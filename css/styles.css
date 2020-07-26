@@ -380,16 +380,21 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.clients-list li:focus {
-  background-color: var(--hover-text-color);
-  border-radius: 4px;
-  fill: #ffffff;
+.clients-list-item-svg {
+  fill: #afb1b8;
 }
-.clients-list li:hover {
-  background-color: var(--hover-text-color);
+.clients-list-item:focus {
+  border: 1px solid var(--hover-text-color);
   border-radius: 4px;
-  fill: #ffffff;
 }
+.clients-list-item:hover {
+  border: 1px solid var(--hover-text-color);
+  border-radius: 4px;
+}
+.clients-list-item:hover .clients-list-item-svg {
+  fill: var(--hover-text-color);
+}
+
 /* ФУТЕР */
 .footer {
   background-color: #2f303a;
